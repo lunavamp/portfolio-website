@@ -182,6 +182,28 @@ details[open] + p {
     gap: 3rem;
     align-items: center;
   }
+
+  .projects-cards {
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 0;
+  }
+}
+
+.project-card-img {
+  display: block;
+  max-width: 30rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    filter: none;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 /* testimonials section */
