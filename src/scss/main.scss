@@ -1,0 +1,224 @@
+@import "variables";
+@import "base";
+@import "header";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+/* banner section */
+.banner-info {
+  gap: 3rem;
+}
+
+.banner-text {
+  text-align: start;
+  margin: 0 auto;
+  max-width: 67rem;
+}
+.social-links {
+  transform: rotate(270deg);
+  p {
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: start;
+  }
+}
+.social-icons {
+  max-width: 8rem;
+  svg {
+    align-self: center;
+    fill: $primary-text;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+
+/* skills section */
+.skills-section {
+  h2 {
+    max-width: 40rem;
+  }
+  .container3 {
+    position: relative;
+    gap: 3rem;
+  }
+}
+
+.skills-cards {
+  .card {
+    background-color: $bg-color3;
+  }
+  .card-title {
+    font-weight: 600;
+    font-size: $font-m;
+  }
+  svg {
+    fill: $accent-color;
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.skills-info {
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.skills-text {
+  max-width: 67rem;
+  text-align: right;
+}
+
+/* glide */
+.glide__arrows-skills {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 40rem;
+  position: absolute;
+  top: -30%;
+  right: 5%;
+}
+
+/* about section */
+.about-container {
+  gap: 3rem;
+  align-items: center;
+  h4,
+  p {
+    text-align: center;
+  }
+}
+
+/* work section */
+.work-section {
+  .container3 {
+    gap: 3rem;
+  }
+}
+
+.work-titles-container {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.work-cards {
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  .card {
+    max-width: 64.5rem;
+    background-color: $bg-color3;
+  }
+  .work-title {
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    color: $primary-text;
+    font-weight: 500;
+    background-color: $accent-color;
+  }
+  a {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+/* faq section */
+.faq-section {
+  gap: 3rem;
+
+  p {
+    font-size: $font-s;
+    max-height: 0;
+    overflow: hidden;
+    padding: 1.6rem 0 0;
+    transition: max-height 400ms ease-out;
+  }
+}
+
+summary {
+  position: relative;
+  list-style: none;
+  font-size: $font-m;
+  font-family: "Cormorant Infant", Arial, sans-serif;
+  font-weight: 600;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 2.5rem;
+  transition: transform 0.6s ease;
+}
+
+details[open] {
+  summary::after {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+  }
+}
+
+details[open] + p {
+  max-height: 80rem; /* Set a max-height value enough to show all the content */
+  transition: max-height 400ms ease-out;
+}
+
+.faq-questions {
+  gap: 4rem;
+}
+
+/* projects section */
+.projects-section {
+  .fx-col-sb {
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+/* testimonials section */
+.testimonials-section {
+  gap: 3rem;
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.review {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.review-img {
+  width: 9rem;
+  height: 9rem;
+  margin-top: -2rem;
+  border-radius: 50%;
+}
+
+.review-cards {
+  .card {
+    max-width: 67rem;
+    background-color: $bg-color2;
+    color: $secondary-text;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 0.68vw;
+  }
+}

@@ -1,0 +1,136 @@
+@use "node_modules/@crossfox/css-start/dist/base.min.css";
+@import "variables";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font: 160% "Montserrat", sans-serif;
+  font-style: normal;
+  color: $primary-text;
+  line-height: 1.4;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    144deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 178, 204, 1) 31%,
+    rgba(255, 255, 255, 1) 68%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.fx-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container,
+.container2,
+.container3 {
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+}
+
+.container2 {
+  width: 98%;
+}
+
+.container3 {
+  width: 91.83%;
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+.section2 {
+  background-color: $bg-color2;
+  border-radius: 3rem;
+  color: $secondary-text;
+}
+
+.card {
+  border-radius: 3rem;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn1 {
+  padding: 1rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: $font-s;
+  font-weight: 500;
+  border: 0.2rem solid $primary-text;
+  background-color: transparent;
+  border-radius: 3rem;
+}
+
+h1,
+h2 {
+  font-size: $font-l;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: $font-s;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 3rem;
+  padding: 1rem 1.2rem;
+}
+
+h4 {
+  font-size: $font-xl;
+  font-weight: 600;
+}
+
+.section-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.arrow-bottom,
+.arrow-bottom2 {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.arrow-bottom {
+  background: url("../img/icons/arrow.svg") no-repeat center/cover;
+}
+
+.arrow-bottom2 {
+  background: url("../img/icons/arrow2.svg") no-repeat center/cover;
+}
+@mixin isMobile {
+  @media (max-width: $width-mob) {
+    @content;
+  }
+}
+@mixin isDesktop {
+  @media (min-width: $width-mob) {
+    @content;
+  }
+}
