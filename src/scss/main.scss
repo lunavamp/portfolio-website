@@ -5,6 +5,9 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 /* banner section */
+.banner-section {
+  padding: 14rem 0 10.8rem;
+}
 .banner-info {
   gap: 3rem;
 }
@@ -145,6 +148,7 @@ summary {
   font-size: $font-m;
   font-family: "Cormorant Infant", Arial, sans-serif;
   font-weight: 600;
+  cursor: pointer;
 }
 
 summary::after {
@@ -183,9 +187,6 @@ details[open] + p {
 /* testimonials section */
 .testimonials-section {
   gap: 3rem;
-  p {
-    margin-bottom: 2rem;
-  }
 }
 
 .review {
@@ -195,6 +196,7 @@ details[open] + p {
 }
 
 .review-img {
+  background-color: $gray-color;
   width: 9rem;
   height: 9rem;
   margin-top: -2rem;
