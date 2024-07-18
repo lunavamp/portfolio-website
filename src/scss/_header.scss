@@ -9,6 +9,7 @@
   width: 100%;
   background-color: $bg-color;
   z-index: 10;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
   a {
     color: $primary-text;
     font-weight: 500;
@@ -20,6 +21,18 @@
   .container {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+.lang {
+  gap: 1rem;
+  p {
+    color: $accent-color;
+    font-weight: 400;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: 400;
   }
 }
 

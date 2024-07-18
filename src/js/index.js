@@ -1,18 +1,3 @@
-// tabs
-document.addEventListener("DOMContentLoaded", () => {
-  const tabHeaders = document.querySelectorAll(".tab-header li");
-  const tabContents = document.querySelectorAll(".tab-content .tab-pane");
-
-  tabHeaders.forEach((tabHeader, index) => {
-    tabHeader.addEventListener("click", () => {
-      tabHeaders.forEach((header) => header.classList.remove("active"));
-      tabContents.forEach((content) => content.classList.remove("active"));
-
-      tabHeader.classList.add("active");
-      tabContents[index].classList.add("active");
-    });
-  });
-});
 // sticky header
 const pageTop = document.querySelector(".page-top");
 
