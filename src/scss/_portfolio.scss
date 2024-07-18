@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.body-portfolio {
+  background: $bg-color2;
+  color: $secondary-text;
+}
+
+.first-project-section {
+  img {
+    width: 67rem;
+    height: 100%;
+  }
+}
+
+.project-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem 2rem;
+  grid-template-areas:
+    "area1 area1 area2"
+    "area1 area1 area2"
+    "area1 area1 area2"
+    "area3 area4 area4"
+    "area3 area4 area4";
+}
+.area1 {
+  grid-area: area1;
+}
+.area2 {
+  grid-area: area2;
+}
+.area3 {
+  grid-area: area3;
+}
+.area4 {
+  grid-area: area4;
+}

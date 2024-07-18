@@ -1,6 +1,7 @@
 @import "variables";
 @import "base";
 @import "header";
+@import "portfolio";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
@@ -12,21 +13,18 @@
   gap: 3rem;
 }
 
+.banner-greeting {
+  font-size: $font-m;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+
 .banner-text {
-  text-align: start;
-  margin: 0 auto;
+  text-align: justify;
   max-width: 67rem;
 }
-.social-links {
-  transform: rotate(270deg);
-  p {
-    font-weight: 500;
-    margin-bottom: 2rem;
-    text-align: start;
-  }
-}
 .social-icons {
-  max-width: 8rem;
+  gap: 1rem;
   svg {
     align-self: center;
     fill: $primary-text;
@@ -116,13 +114,6 @@
     max-width: 64.5rem;
     background-color: $bg-color3;
   }
-  .work-title {
-    padding: 1rem 3rem;
-    border-radius: 3rem;
-    color: $primary-text;
-    font-weight: 500;
-    background-color: $accent-color;
-  }
   a {
     font-weight: 500;
     text-decoration: underline;
@@ -147,7 +138,7 @@ summary {
   list-style: none;
   font-size: $font-m;
   font-family: "Cormorant Infant", Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -173,7 +164,7 @@ details[open] + p {
 }
 
 .faq-questions {
-  gap: 4rem;
+  gap: 2rem;
 }
 
 /* projects section */

@@ -81,9 +81,28 @@ body {
   border: 0.2rem solid $primary-text;
   background-color: transparent;
   border-radius: 3rem;
+  color: $primary-text;
 }
 
-h1,
+.btn2 {
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: $primary-text;
+  font-weight: 500;
+  background-color: $accent-color;
+}
+
+h1 {
+  font-size: $font-xl;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.17rem;
+  margin-top: -2.1rem;
+  span {
+    color: $accent-color;
+  }
+}
+
 h2 {
   font-size: $font-l;
   font-weight: 600;
