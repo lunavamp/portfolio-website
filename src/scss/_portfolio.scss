@@ -3,36 +3,34 @@
 .body-portfolio {
   background: $bg-color2;
   color: $secondary-text;
-}
-
-.first-project-section {
-  img {
-    width: 67rem;
-    height: 100%;
+  .btn2 {
+    max-width: 17rem;
+    text-align: center;
   }
 }
 
-.project-grid1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem 2rem;
-  grid-template-areas:
-    "area1 area1 area2"
-    "area1 area1 area2"
-    "area1 area1 area2"
-    "area3 area4 area4"
-    "area3 area4 area4";
+.first-project-section {
+  gap: 4rem;
+  img {
+    height: 100%;
+    max-width: 90rem;
+  }
+  .project-container {
+    gap: 4rem;
+  }
 }
-.area1 {
-  grid-area: area1;
+
+.project-info {
+  gap: 2rem;
 }
-.area2 {
-  grid-area: area2;
+
+.second-project-section {
+  gap: 4rem;
 }
-.area3 {
-  grid-area: area3;
-}
-.area4 {
-  grid-area: area4;
+
+.blog-project {
+  align-items: flex-start;
+  img {
+    width: 67rem;
+  }
 }
