@@ -232,6 +232,84 @@ details[open] + p {
   }
 }
 
+/* modal */
+.modal {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+  pointer-events: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.modal-form-container {
+  padding: 4rem 3rem;
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: $font-m;
+    margin: 1rem 0;
+  }
+  .social-icons {
+    max-width: 10rem;
+    margin: 0 auto;
+    padding: 4rem 0 0;
+  }
+}
+
+.modal-bg {
+  width: 50%;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  color: #aaa;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-form {
+  gap: 1.8rem;
+  textarea {
+    resize: none;
+  }
+  input,
+  textarea {
+    border: 0.1rem solid #888;
+    margin-top: 0.3rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+  }
+}
+
 @media (min-width: 1200px) {
   html {
     font-size: 0.68vw;

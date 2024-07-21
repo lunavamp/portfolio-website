@@ -10,13 +10,13 @@
 }
 
 .first-project-section {
-  gap: 4rem;
+  gap: 5rem;
   img {
     height: 100%;
     max-width: 90rem;
   }
   .project-container {
-    gap: 4rem;
+    gap: 5rem;
   }
 }
 
@@ -25,12 +25,20 @@
 }
 
 .second-project-section {
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .blog-project {
   align-items: flex-start;
   img {
     width: 67rem;
+  }
+}
+
+.third-project-section {
+  gap: 5rem;
+  img {
+    margin-top: -5rem;
+    max-width: 90rem;
   }
 }
