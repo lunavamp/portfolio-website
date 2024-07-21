@@ -158,3 +158,16 @@ p + p {
     @content;
   }
 }
+
+@media (max-width: $width-mob) {
+  h1,
+  h4 {
+    font-size: $font-l;
+  }
+  h2 {
+    font-size: $font-m;
+  }
+  .section {
+    padding: 6rem 0;
+  }
+}

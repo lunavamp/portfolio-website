@@ -157,7 +157,9 @@
 
   .burger-menu-container {
     display: flex;
+    align-items: center;
     position: relative;
     z-index: 99;
+    margin-left: 1rem;
   }
 }

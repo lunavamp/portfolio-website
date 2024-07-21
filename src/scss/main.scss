@@ -62,6 +62,10 @@
 .skills-info {
   align-items: start;
   margin-bottom: 2rem;
+  @include isMobile {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 
 .skills-text {
@@ -100,10 +104,18 @@
   display: flex;
   align-items: baseline;
   position: relative;
+  @include isMobile {
+    flex-direction: column;
+    gap: 3rem;
+  }
   h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    @include isMobile {
+      position: static;
+      transform: none;
+    }
   }
 }
 
@@ -140,6 +152,10 @@ summary {
   font-family: "Cormorant Infant", Arial, sans-serif;
   font-weight: 500;
   cursor: pointer;
+  @include isMobile {
+    font-size: $font-s;
+    padding-right: 1rem;
+  }
 }
 
 summary::after {
@@ -148,6 +164,9 @@ summary::after {
   right: 0;
   font-size: 2.5rem;
   transition: transform 0.6s ease;
+  @include isMobile {
+    top: -10%;
+  }
 }
 
 details[open] {
@@ -176,6 +195,9 @@ details[open] + p {
 
   .projects-cards {
     gap: 2rem;
+    @include isMobile {
+      flex-direction: column;
+    }
   }
 
   .card {
@@ -255,6 +277,13 @@ details[open] + p {
   margin: 0 auto;
   width: 50%;
   height: 80%;
+  @include isMobile {
+    .modal-form-container {
+      padding: 1rem 2.5rem;
+    }
+    width: 90%;
+    height: 70%;
+  }
 }
 
 .modal-form-container {
@@ -320,5 +349,14 @@ details[open] + p {
 @media (min-width: 1200px) {
   html {
     font-size: 0.68vw;
+  }
+}
+
+@media (max-width: $width-mob) {
+  html {
+    font-size: 2.4vw;
+  }
+  .banner-section {
+    padding: 12.6rem 0 6rem;
   }
 }
