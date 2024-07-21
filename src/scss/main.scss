@@ -254,6 +254,7 @@ details[open] + p {
   background-color: #fefefe;
   margin: 0 auto;
   width: 50%;
+  height: 80%;
 }
 
 .modal-form-container {
@@ -274,6 +275,12 @@ details[open] + p {
 .modal-bg {
   width: 50%;
   height: 100%;
+  background: url("../img/bg.jpg") center/cover;
+  filter: hue-rotate(5deg) brightness(77%);
+}
+
+.btn-modal[class] {
+  border: none;
 }
 
 .close {
