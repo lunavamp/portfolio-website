@@ -30,6 +30,11 @@
     fill: $primary-text;
     width: 1.9rem;
     height: 1.9rem;
+    transition: 8ms ease;
+  }
+  svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }
 
@@ -142,6 +147,12 @@
     overflow: hidden;
     padding: 1.6rem 0 0;
     transition: max-height 400ms ease-out;
+    max-width: 80rem;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: 500;
+    color: rgb(95, 162, 239);
   }
 }
 
@@ -149,7 +160,6 @@ summary {
   position: relative;
   list-style: none;
   font-size: $font-m;
-  font-family: "Cormorant Infant", Arial, sans-serif;
   font-weight: 500;
   cursor: pointer;
   @include isMobile {
@@ -216,6 +226,9 @@ details[open] + p {
   }
   img {
     width: 100%;
+  }
+  @include isMobile {
+    filter: none;
   }
 }
 
