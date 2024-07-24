@@ -29,41 +29,6 @@
   }
 }
 
-.lang {
-  position: relative;
-  cursor: pointer;
-  a {
-    text-decoration: underline;
-  }
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-  z-index: 999;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown-menu li {
-  padding: 1rem;
-  width: 6.5rem;
-}
-
-.dropdown-menu li:hover {
-  background-color: #f0f0f0;
-}
-
-.lang:hover .dropdown-menu,
-.lang:focus-within .dropdown-menu {
-  display: block;
-}
-
 .header-menu-container {
   max-width: 67rem;
   gap: 7.3rem;

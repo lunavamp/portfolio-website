@@ -15,7 +15,29 @@
   <body>
     <div class="page-top"></div>
     @@include('blocks/header.html')
-    <main>Coming soon</main>
+    <main>
+      <section class="blog-section container fx-col-sb">
+        <h2>Blog</h2>
+        <div class="search fx-sb">
+          <input type="search" name="search" placeholder="Search by title..." />
+          <button>
+            <svg><use xlink:href="#search-svg" /></svg>
+          </button>
+        </div>
+        <div class="blog-cards">
+          <div class="card">
+            <img src="../img/bg.jpg" alt="" />
+            <p class="category">web development</p>
+            <h5>Lorem ipsum dolor sit consectetur</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, incidunt totam commodi vel sit facilis illum ratione
+              dolores velit nihil.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     @@include('blocks/footer.html') @@include('blocks/svg.html')
     <script src="js/index.bundle.js"></script>
   </body>

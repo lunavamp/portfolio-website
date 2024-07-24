@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-top"></div>
+    @@include('blocks/header.html')
+    <main>
+      <section class="blog-post-section container">
+        <article class="fx-col-sb">
+          <header>
+            <p class="category">Web development</p>
+            <h2>Post title</h2>
+            <div class="post-info fx-sb">
+              <p>Date: <time datetime="2024-07-24">24 jul 2024</time></p>
+              <p>Author: <a href="#">Karina Kolesnichenko</a></p>
+            </div>
+          </header>
+          <img src="../img/bg.jpg" alt="" />
+          <section>
+            <h5>Подзаголовок 1</h5>
+            <p>Содержимое подзаголовка 1</p>
+          </section>
+          <section>
+            <h5>Подзаголовок 2</h5>
+            <p>Содержимое подзаголовка 2</p>
+          </section>
+          <footer>
+            <p>
+              Категории: <a href="#">Категория 1</a>,
+              <a href="#">Категория 2</a>
+            </p>
+            <p>Метки: <a href="#">Метка 1</a>, <a href="#">Метка 2</a></p>
+          </footer>
+        </article>
+      </section>
+    </main>
+    @@include('blocks/footer.html') @@include('blocks/svg.html')
+    <script src="js/index.bundle.js"></script>
+  </body>
+</html>
